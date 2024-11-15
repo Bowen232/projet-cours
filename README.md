@@ -1,4 +1,4 @@
-### Projet Web PHP/MySQL - Gestion des Activités Sportives
+# Projet Web PHP/MySQL - Gestion des Activités Sportives
 Ce projet est une application web développée en PHP et MySQL pour gérer des activités sportives. Il permet aux administrateurs de créer, modifier, annuler et supprimer des activités, ainsi qu'aux utilisateurs de s'inscrire, consulter leur compte, et gérer leur historique.
 
 
@@ -23,7 +23,7 @@ Ce projet est une application web développée en PHP et MySQL pour gérer des a
 
 
 
-# Fonctionnalités
+### Fonctionnalités
 · Gestion des Activités : Les administrateurs peuvent ajouter, modifier, annuler et supprimer des activités sportives.
 · Gestion des Inscriptions : Les utilisateurs peuvent s'inscrire aux activités, annuler leur inscription et consulter leur historique.
 · Gestion des Comptes : Les utilisateurs peuvent consulter et modifier leurs informations personnelles.
@@ -39,14 +39,14 @@ Ce projet est une application web développée en PHP et MySQL pour gérer des a
 
 ## Installation
 
-#  Prérequis
+###  Prérequis
 · Serveur Web : Apache, Nginx ou autre avec support PHP.
 · PHP : Version 7.0 ou supérieure.
 · MySQL : Version 5.7 ou supérieure.
 · Extensions PHP : PDO, MySQLi.
 
 
-# Configuration de la base de données
+### Configuration de la base de données
 1. Créer la base de données :
 
 sql：
@@ -63,7 +63,7 @@ Utilisez le fichier project.sql fourni pour créer les tables et insérer les do
     
 Note : Assurez-vous que les tables entrainement, inscription, utilisateur, etc., sont correctement créées avec les noms en minuscules.
 
-# Configuration du serveur web
+### Configuration du serveur web
 · Document Root : Placez les fichiers du projet dans le répertoire accessible par le serveur web, par exemple /var/www/html/project/.
 
 · Permissions :
@@ -72,7 +72,7 @@ Note : Assurez-vous que les tables entrainement, inscription, utilisateur, etc.,
     et écrire dans le répertoire du projet.
   · Spécifiquement, le répertoire image_entrainement/ doit être accessible en écriture pour permettre le 
     téléchargement et la suppression des images.
-# Configuration du projet
+### Configuration du projet
 
 1.Fichier de connexion à la base de données :
 
@@ -104,7 +104,7 @@ php：
 
 ## Utilisation
 
-# Administration
+### Administration
  · Accès : Connectez-vous en tant qu'administrateur via connect_administrateur.php.
 
  · Gestion des activités :
@@ -117,7 +117,7 @@ php：
      ·Supprimer une activité : Cliquez sur "Supprimer" pour supprimer définitivement l'activité, y compris les 
       inscriptions et les photos associées.
 
-# Utilisateur
+### Utilisateur
 
    ·Inscription : Créez un compte utilisateur via connect_visitor.php.
 
@@ -131,7 +131,7 @@ php：
       
 ## Problèmes Courants et Solutions
 
-# Sensibilité à la Casse des Noms de Tables
+### Sensibilité à la Casse des Noms de Tables
 Problème : Erreurs SQL indiquant que les tables n'existent pas, par exemple :
 
 sql：
@@ -148,7 +148,7 @@ Solution :
 · Vérifiez et corrigez tous les appels aux tables dans votre code PHP.
 
 
-# Permissions de Fichiers et Répertoires
+### Permissions de Fichiers et Répertoires
 
 Problème : Erreurs lors du téléchargement ou de la suppression de fichiers, par exemple :
 
@@ -176,7 +176,7 @@ Remplacez www-data par l'utilisateur de votre serveur web si nécessaire.
      répertoire.
 
      
-# Adaptation aux Appareils Mobiles
+### Adaptation aux Appareils Mobiles
 
 Problème : Les pages web ne s'affichent pas correctement sur les appareils mobiles.
 
